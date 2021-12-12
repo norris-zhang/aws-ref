@@ -18,3 +18,10 @@ Google aws policy simulator for the tool of testing IAM policies.
 Or use CLI --dry-run option to test whether I have the permission, without actually running the command, because sometimes it is expensive if the command is successfully run.
 
 $ aws ec2 run-instances --dry-run --image-id ami-06340c8c12baa6a09 --instance-type t2.micro
+
+If you get an error and the error message is a long encoded text, you run sts decode authorization message command.
+```
+$ aws sts decode-authorization-message --encoded-message xxxxxxxxxxxxx
+```
+This will require policy of allowing STS write.
+Google sts decode authorization message for detailed usage.
