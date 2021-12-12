@@ -25,3 +25,20 @@ $ aws sts decode-authorization-message --encoded-message xxxxxxxxxxxxx
 ```
 This will require policy of allowing STS write.
 Google sts decode authorization message for detailed usage.
+
+### AWS EC2 Instance Metadata
+You can retrieve EC2 Instance Metadata from inside an EC2 instance without having the policy to do so.
+```
+$ curl http://169.254.169.254/latest/meta-data/
+```
+
+### AWS CLI Profiles
+```
+$ aws s3 ls --profile my-other-aws-account
+```
+The my-other-aws-account is previously configured profile that uses a different access key ID and secret_access_key from the default one.
+
+### AWS CLI with MFA
+```
+$ aws sts get-session-token --serial-number arn:aws:iam::387124123361:mfa/stephane<from iam that configures mfa> --token-code 828463<from mfa device>
+```
