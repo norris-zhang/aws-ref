@@ -43,3 +43,8 @@ The my-other-aws-account is previously configured profile that uses a different 
 $ aws sts get-session-token --serial-number arn:aws:iam::387124123361:mfa/stephane<from iam that configures mfa> --token-code 828463<from mfa device>
 ```
 And this will generate a temporary session token which expires in one hour.
+
+### CloudFormation
+Resources Documentation:
+
+http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html
