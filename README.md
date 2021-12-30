@@ -51,4 +51,9 @@ http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resou
 
 ### DynamoDB
 Query vs Scan
+
+https://dynobase.dev/dynamodb-scan-vs-query/
+
+https://dynobase-assets.s3-us-west-2.amazonaws.com/scan-vs-query.png
+
 ![image](https://user-images.githubusercontent.com/13086073/147718537-f6b068a6-7649-41c1-b5ba-452107e0a01c.png)
