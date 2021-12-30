@@ -48,3 +48,7 @@ And this will generate a temporary session token which expires in one hour.
 Resources Documentation:
 
 http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html
+
+### DynamoDB
+Query vs Scan
+![image](https://user-images.githubusercontent.com/13086073/147718537-f6b068a6-7649-41c1-b5ba-452107e0a01c.png)
