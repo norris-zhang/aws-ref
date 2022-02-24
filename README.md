@@ -57,3 +57,7 @@ https://dynobase.dev/dynamodb-scan-vs-query/
 https://dynobase-assets.s3-us-west-2.amazonaws.com/scan-vs-query.png
 
 ![image](https://user-images.githubusercontent.com/13086073/147718537-f6b068a6-7649-41c1-b5ba-452107e0a01c.png)
+
+### Determine what stack a resource is created by
+$ aws cloudformation describe-stack-resources --physical-resource-id "MigrationShim"
+
